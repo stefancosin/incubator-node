@@ -1,0 +1,23 @@
+idf_component_register(
+    SRCS
+        "main.cpp"
+        "incubator_state.cpp"
+        "wifi_connect.cpp"
+        "mqtt_link.cpp"
+        "sensor_task.cpp"
+        "control_task.cpp"
+        "motor_task.cpp"
+    INCLUDE_DIRS "."
+    REQUIRES
+        driver
+        freertos
+        esp_wifi
+        esp_event
+        esp_netif
+        nvs_flash
+        mqtt
+        gpio_actuator
+        dht11
+        lcd_i2c
+        stepper_28byj48
+)

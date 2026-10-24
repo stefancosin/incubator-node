@@ -1,0 +1,7 @@
+# ESP-IDF build output
+build/
+
+# Generated, contains real WiFi credentials in plaintext - sdkconfig.defaults
+# (placeholders only) is the one that's safe to commit
+sdkconfig
+sdkconfig.old

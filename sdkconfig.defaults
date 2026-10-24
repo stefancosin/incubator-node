@@ -1,0 +1,9 @@
+# 1 kHz tick so vTaskDelay(1) is a real 1ms step for the stepper driver,
+# matching the original firmware's per-step timing (see MS_1 in the
+# Arduino version) instead of rounding up to the default 100Hz/10ms tick.
+CONFIG_FREERTOS_HZ=1000
+
+CONFIG_INCUBATOR_WIFI_SSID="myssid"
+CONFIG_INCUBATOR_WIFI_PASSWORD="mypassword"
+CONFIG_INCUBATOR_MQTT_BROKER_URI="mqtt://192.168.1.67:1883"
+CONFIG_INCUBATOR_MQTT_CLIENT_ID="incubator-node"
